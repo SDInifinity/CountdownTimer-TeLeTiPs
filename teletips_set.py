@@ -18,18 +18,9 @@ bot=Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"],
-    sudo_users = os.environ["SUDO_USERS"]
-)
+ )
 
 stoptimer = False
-
-JOIN_ASAP = " **You cant use me untill subscribe our updates channel**\n\n So Please join our updates channel by the following button and hit on the ` /start ` button again "
-
-FSUBB = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton(text="Join our update Channel ", url=f"https://t.me/sl_bot_zone") 
-        ]]      
-    )
 
 
 
