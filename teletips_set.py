@@ -41,7 +41,8 @@ TELETIPS_MAIN_MENU_BUTTONS = [
 async def start(client, message):
     text = START_TEXT
     reply_markup = InlineKeyboardMarkup(TELETIPS_MAIN_MENU_BUTTONS)
-    await message.reply(
+    await message.reply_video(
+        video= "telegraph",
         text=text,
         reply_markup=reply_markup,
         disable_web_page_preview=True
