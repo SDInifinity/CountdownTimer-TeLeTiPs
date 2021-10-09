@@ -33,7 +33,7 @@ TELETIPS_MAIN_MENU_BUTTONS = [
                 InlineKeyboardButton('🏆 Adevertitments 🏆', callback_data="TUTORIAL_CALLBACK")
             ],
             [
-                InlineKeyboardButton('💖 Rate Me 💖', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('💖 Rate Me 💖', url="https://t.me/slbotzone")
             ]
         ]
 
@@ -122,7 +122,7 @@ async def callback_query(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('🏆 Adertitments 🏆', callback_data="TUTORIAL_CALLBACK")
             ],
             [
-                InlineKeyboardButton('💖 Rate Me 💖', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('💖 Rate Me 💖', url="https://t.me/slbotzone")
             ]
         ]
         reply_markup = InlineKeyboardMarkup(TELETIPS_START_BUTTONS)
