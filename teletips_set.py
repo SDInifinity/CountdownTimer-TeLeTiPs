@@ -16,8 +16,7 @@ bot=Client(
     "Countdown-TeLeTiPs",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
-    bot_token = os.environ["BOT_TOKEN"],
-    channel_username = os.environ["CHANNEL_USERNAME"]
+    bot_token = os.environ["BOT_TOKEN"]
 )
 
 stoptimer = False
