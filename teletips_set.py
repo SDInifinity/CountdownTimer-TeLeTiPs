@@ -39,7 +39,7 @@ TELETIPS_MAIN_MENU_BUTTONS = [
             ]
         ]
 
-@app.on_callback_query(static_data_filter)
+@bot.on_callback_query(static_data_filter)
 def _onUnMuteRequest(client, lel):
   user_id = lel.from_user.id
   chat_id = lel.message.chat.id
@@ -64,7 +64,7 @@ def _onUnMuteRequest(client, lel):
       else:
         client.answer_callback_query(lel.id, text="❗ Warning: Don't click the button if you can speak freely.⚡⚡", show_alert=True)
 
-@Jebot.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
+@bot.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
 def _check_member(client, message):
   chat_id = message.chat.id
   chat_u = Config.CHANNEL_USERNAME #channel for force sub
@@ -82,7 +82,7 @@ def _check_member(client, message):
                 Config.WARN_MESSAGE,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                  [[InlineKeyboardButton("🗣 Unmute Me🔥", callback_data="hukaidaala")],
+                  [[InlineKeyboardButton("🗣 Unmute Me🔥", callback_data="START_CALLBACK")],
                   [InlineKeyboardButton("🔊 Join Channel🤖", url=f"https://t.me/{chat_u}")]]))
               client.restrict_chat_member(chat_id, user_id, ChatPermissions(can_send_messages=False))
 
