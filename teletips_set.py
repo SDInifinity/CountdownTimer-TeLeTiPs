@@ -41,13 +41,12 @@ TELETIPS_MAIN_MENU_BUTTONS = [
 async def start(client, message):
     text = START_TEXT
     reply_markup = InlineKeyboardMarkup(TELETIPS_MAIN_MENU_BUTTONS)
-    await message.reply_video(
-        video= "https://telegra.ph/file/290b04f8fb43495294ffc.mp4",
+    await message.reply(
         text=text,
         reply_markup=reply_markup,
         disable_web_page_preview=True
     )
-
+    
 @bot.on_callback_query()
 async def callback_query(client: Client, query: CallbackQuery):
     if query.data=="HELP_CALLBACK":
