@@ -30,10 +30,10 @@ TELETIPS_MAIN_MENU_BUTTONS = [
                 InlineKeyboardButton(',👻 My Updates 👻', url='https://t.me/sl_bot_zone'),
             ],
             [
-                InlineKeyboardButton('🏆 Donets 🏆', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('🏆 Adevertitments 🏆', callback_data="TUTORIAL_CALLBACK")
             ],
             [
-                InlineKeyboardButton('🔰 Close 🔰', callback_data="TUTORIAL_CALLBACK")
+                InlineKeyboardButton('💖 Rate Me 💖', callback_data="TUTORIAL_CALLBACK")
             ]
         ]
 
@@ -52,7 +52,7 @@ async def callback_query(client: Client, query: CallbackQuery):
     if query.data=="HELP_CALLBACK":
         TELETIPS_HELP_BUTTONS = [
             [
-                InlineKeyboardButton("🙋‍♀️ Back", callback_data="START_CALLBACK")
+                InlineKeyboardButton("🙋‍♀️ Back Mein Menu ", callback_data="START_CALLBACK")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(TELETIPS_HELP_BUTTONS)
@@ -73,7 +73,7 @@ async def callback_query(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("🌎 Advertitments 🏆", url="https://t.me/slbotzone")
             ],
             [
-                InlineKeyboardButton("🥰 Developer 🥰", url="https://t.me/omindas")
+                InlineKeyboardButton("🥰 Developers 🥰", callback_data="TUTORIAL_CALLBACK"")
             ],
             [
                 InlineKeyboardButton("🙋‍♀️ Back", callback_data="START_CALLBACK"),
@@ -91,13 +91,13 @@ async def callback_query(client: Client, query: CallbackQuery):
     elif query.data=="TUTORIAL_CALLBACK":
         TELETIPS_TUTORIAL_BUTTONS = [
             [
-                InlineKeyboardButton("😍 Ominda", url="https://t.me/omindas")
+                InlineKeyboardButton("SL Bot Zone", url="https://t.me/szteambots")
             ],
             [
-                InlineKeyboardButton("😍 Supun", url="https://t.me/supunma")
+                InlineKeyboardButton("WL Film World", url="https://t.me/FilmAndTVSeriasChat")
             ],
             [
-                InlineKeyboardButton("😍 Denuwan", url="https://t.me/imdenuwan")
+                InlineKeyboardButton("Developer", url="https://t.me/omindas")
             ],
             [
                 InlineKeyboardButton("🙋‍♀️ Back", callback_data="START_CALLBACK"),
@@ -156,7 +156,7 @@ async def set_timer(client, message):
             if 0<user_input_time<=10:
                 while user_input_time and not stoptimer:
                     s=user_input_time%60
-                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve Jobs'.format(user_input_event, s)
+                    Countdown_TeLe_TiPs='{}\n\n⏳ {:02d}**s**\n\n<i>"Your **Time** Is Limited, So Don\'t Waste It Living Someone Else\'s Life"</i>\n      - Steve [Jobs](https://telegra.ph/file/290b04f8fb43495294ffc.mp4)'.format(user_input_event, s)
                     finish_countdown = await get_user_input_time.edit(Countdown_TeLe_TiPs)
                     await asyncio.sleep(1)
                     user_input_time -=1
