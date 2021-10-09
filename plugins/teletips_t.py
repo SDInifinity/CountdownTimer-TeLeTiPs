@@ -5,7 +5,7 @@
 # Changing the code is not allowed! Read GNU AFFERO GENERAL PUBLIC LICENSE: https://github.com/teletips/CountdownTimer-TeLeTiPs/blob/main/LICENSE
                        
   
-START_TEXT = '[Heya](https://telegra.ph/file/290b04f8fb43495294ffc.mp4)) 🤩 ,\nMy name is **RolleX** ⏰\n\nI can countdown to your important events in **any group chat**. 🎉\nUse me to keep track of how much time is left for the event ⏳\n\nHit **🙋‍♀️ Commands Help 🙋‍♀️** to find out more about how to use me.'
+START_TEXT = '[Heya](https://telegra.ph/file/290b04f8fb43495294ffc.mp4) 🤩 \nMy name is **RolleX** ⏰\n\nI can countdown to your important events in **any group chat**. 🎉\nUse me to keep track of how much time is left for the event ⏳\n\nHit **🙋‍♀️ Commands Help 🙋‍♀️** to find out more about how to use me.'
 
 GROUP_TEXT="""
 Heya [{}](tg://user?id={}) ,👻 This Bot Developed From SZ Team…👻.
